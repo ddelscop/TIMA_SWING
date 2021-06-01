@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-06-25T09:48:48 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="listadDetalleHorasCliente" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9c4c00f7-3d99-46de-ad63-c9701214246e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="cliente" class="java.lang.String"/>
+	<parameter name="fechaDesde" class="java.lang.String"/>
+	<parameter name="fechaHasta" class="java.lang.String"/>
+	<parameter name="totalHoras" class="java.lang.String"/>
+	<parameter name="honorarios" class="java.lang.String"/>
+	<parameter name="rate" class="java.lang.String"/>
+	<field name="funcionario" class="java.lang.String"/>
+	<field name="servicio" class="java.lang.String"/>
+	<field name="horas" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="285" height="33" uuid="c0eb51e9-37d1-40aa-8eed-e437b443b483"/>
+				<textElement>
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Detalle de horas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="39" width="64" height="20" uuid="19e92a9e-b61d-4534-811f-9e2b8ab25ebe"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cliente:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="64" y="39" width="203" height="20" uuid="489e02e8-6f60-41cc-9226-12233585066f"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cliente}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="59" width="64" height="20" uuid="08109a9d-2909-416c-8d53-805265375e70"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Desde:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="64" y="59" width="221" height="20" uuid="70a668f7-5461-4df8-9fcd-736f25e28f54"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fechaDesde}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="333" y="0" width="222" height="73" uuid="a2df7ff6-cd8b-4917-830d-e356c4d43870"/>
+				<imageExpression><![CDATA[".\\reportes\\jasper\\banner.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="34" width="555" height="1" uuid="533e6a53-81e7-441a-bacd-08426be33609"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="0" width="64" height="20" uuid="87cee793-041c-4549-82ad-1ec3f7dd1ba4"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hasta:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="64" y="0" width="221" height="20" uuid="7fed6890-d4a9-42c4-a414-670b5e0691c6"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fechaHasta}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="41" width="230" height="20" uuid="c3a9c036-d06d-4241-9a94-436c76ee6b4e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Funcionarios]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="41" width="235" height="20" uuid="c1c1c230-5737-459a-8cfa-e1bf130bbaae"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Servicios]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="465" y="41" width="90" height="20" uuid="41eae673-ed0b-41f7-a230-3fbd11ef2016"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Horas]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="230" height="20" uuid="cc60739d-db66-464d-a8c3-204e6e490d83"/>
+				<textFieldExpression><![CDATA[$F{funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="233" y="0" width="232" height="20" uuid="a344f976-f5ae-4105-abfd-e5dad2d30734"/>
+				<textFieldExpression><![CDATA[$F{servicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="0" width="90" height="20" uuid="697b8ce3-8f2e-41a7-b681-4e2ca79e7d11"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{horas}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="f4d35e2e-efc9-4344-a9c2-da620d8530a3"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<textField>
+				<reportElement x="465" y="25" width="90" height="20" uuid="a7e91bea-6ef9-45d0-8c87-82cedea26376"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalHoras}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="420" y="25" width="45" height="20" uuid="59dd822b-00ef-4c80-99e0-a1a7c1e6dbda"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="25" width="64" height="20" uuid="071bf042-1a8c-4282-9776-b3c4cc713766"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Honorarios:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="64" y="25" width="89" height="20" uuid="39555fc1-c0e0-4cb1-a75c-ccbd5b4ad63d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{honorarios}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="193" y="25" width="37" height="20" uuid="73446627-5512-4a12-a0a5-7c90116f53a7"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rate:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="230" y="25" width="80" height="20" uuid="c3e49bd9-bac3-4821-ac70-8bf94901f7c9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{rate}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="24" width="555" height="1" uuid="5da2ee9b-fe75-47a7-8bb2-db1d5b29a664"/>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

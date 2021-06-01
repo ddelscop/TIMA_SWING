@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="comperfis1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2d6a784a-6e7a-4e5d-9722-5954e29db0fc">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="tareas" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="105" splitType="Stretch"/>
+	</title>
+	<detail>
+		<band height="636" splitType="Stretch">
+			<staticText>
+				<reportElement x="34" y="10" width="521" height="20" uuid="afe9cdfd-473a-4221-a503-c2d46d091b27"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[d) PEP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="40" width="525" height="36" uuid="742b2b4a-28ac-43a8-b107-648ba2a344a3"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[¿Ha desempeñado en los últimos dos años alguna de las tareas inherentes a una persona políticamente expuesta (PEP)*?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="190" width="522" height="91" uuid="cf094923-0923-42de-a576-53a2a0ef90ea"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[* Personas políticamente expuestas (PEP): Son aquellas que desempeñan o han desempeñado funciones públicas de importancia en el país o en el extranjero, tales como: jefes de Estado o de Gobierno, políticos de jerarquía, funcionarios gubernamentales, judiciales o militares de alta jerarquía, dirigentes destacados de partidos políticos, directores y altos ejecutivos de empresas estatales y otras entidades públicas. Se entiende también aquellos miembros de la familia o asociados cercanos de los PEPs.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="314" width="525" height="72" uuid="706c8242-e882-4413-ba8f-f086eba9438a"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Se deberá hacer constar si el cliente actúa por cuenta propia o de un tercero, y en éste último caso identificar el beneficiario final en la forma indicada anteriormente. Se entiende por tal, a la persona física que es propietaria final o controlante de un cliente o en cuya representación se lleva a cabo una operación, el término también comprende a aquellas personas que ejercen el control final sobre una persona jurídica, un fideicomiso, un fondo de inversión u otro patrimonio de afectación.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="526" width="525" height="20" uuid="681ae14d-41a1-4acf-a97b-dd948c96ffe3"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Firma del Cliente:  ____________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="414" width="525" height="18" uuid="8fb457e8-c48e-48db-a557-54d123bebbc9"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Es IMPRESCINDIBLE adjuntar FOTOCOPIA VIGENTE DEL DOCUMENTO DE IDENTIDAD]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="30" y="76" width="525" height="102" uuid="54693e64-0a81-414e-8087-748388a293fd"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tareas}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="30" y="285" width="525" height="1" uuid="eb4427cb-2ad4-425d-86a9-932250c18828"/>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="490" y="34" width="65" height="20" uuid="d20b0366-fac1-4932-81f8-4f47ebb24acc"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pág. 3 de 3]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

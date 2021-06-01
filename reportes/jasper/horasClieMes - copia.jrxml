@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="horasClieMes" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3caba6b3-c9da-4267-ba2b-543e003d5d6a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="funcionario" class="java.lang.String"/>
+	<parameter name="mes" class="java.lang.String"/>
+	<parameter name="anio" class="java.lang.String"/>
+	<parameter name="hcomp" class="java.lang.String"/>
+	<parameter name="hcargables" class="java.lang.String"/>
+	<parameter name="hquincena" class="java.lang.String"/>
+	<field name="cliente" class="java.lang.String"/>
+	<field name="servicio" class="java.lang.String"/>
+	<field name="horas" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement uuid="f4eea959-7a45-4cc0-a443-17cbedef20c4" x="333" y="0" width="222" height="73"/>
+				<imageExpression><![CDATA[".\\reportes\\jasper\\banner.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="1a19ae88-4c56-4e5b-82ec-46698d2b1603" x="0" y="0" width="307" height="32"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Detalle de horas mensual]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d86f8803-31d0-4d48-ad54-8d82b26f83a0" x="0" y="39" width="100" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Funcionario:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ca65fe9d-22f8-4514-b7cc-21ab2d34393e" x="0" y="59" width="100" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mes:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="eeaef696-0ff9-4e49-b339-4572af3edb7a" x="100" y="39" width="207" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0ff36a3d-62ae-47f6-89bc-98b5326a90f6" x="100" y="59" width="207" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mes}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="64918dc8-07a7-4d1a-8a5b-f41981653360" x="0" y="0" width="100" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Año:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="42d0747a-b21e-497d-9f70-f8dcd0a05603" x="100" y="0" width="207" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{anio}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="96438391-8589-4269-8f6c-a2960f7907b6" x="0" y="41" width="233" height="20"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cliente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3148841e-38c5-46cf-8fd2-e624db318331" x="233" y="41" width="240" height="20"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Servicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3eddd38a-032b-4148-b5be-550147bf085e" x="473" y="41" width="82" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Horas]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<line>
+				<reportElement uuid="fd59aad4-2cc5-4c51-a5be-f23c9332b026" x="0" y="0" width="555" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="1c59ffca-9cee-44e9-bb47-979de3a5afd1" x="0" y="1" width="233" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{cliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7634b3d7-cadf-4b32-897b-02d0f94089fa" x="233" y="1" width="240" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{servicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="cab61b10-7a52-451b-bb35-085438d56d70" x="473" y="1" width="82" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{horas}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="13b40062-83b9-47c2-863a-22ddb3e1785f" x="0" y="25" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Horas a compensar:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="b884196d-0a22-4475-b987-a86383ea3c7c" x="100" y="25" width="55" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{hcomp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="7b95e800-5500-4ca6-b955-602b3a3663a4" x="176" y="25" width="86" height="20"/>
+				<textElement/>
+				<text><![CDATA[Horas cargables:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="aea77d6c-335a-4703-9946-bbebf119ac0a" x="262" y="25" width="71" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{hcargables}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="1c6d0c83-cc82-4af7-81dd-8a5c04ad2da1" x="380" y="25" width="109" height="20"/>
+				<textElement/>
+				<text><![CDATA[Horas de la quincena:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="aabfc5fb-ec03-4e11-b431-07ddbdc9d905" x="489" y="25" width="56" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{hquincena}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="f27a0741-8cc7-4fc8-b645-064ac88a3805" x="0" y="24" width="555" height="1"/>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

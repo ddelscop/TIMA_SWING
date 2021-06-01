@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="comperfis1" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2d6a784a-6e7a-4e5d-9722-5954e29db0fc">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="271"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="105" splitType="Stretch">
+			<image>
+				<reportElement x="30" y="0" width="219" height="48" uuid="ee8301d9-30d7-4c4d-ac42-e6a243d7b4ef"/>
+				<imageExpression><![CDATA["C:\\workspace\\TiMa\\reportes\\compliance\\rxa.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="288" y="0" width="188" height="43" uuid="19f5c01a-5648-4686-9e3d-e6bce7526b17"/>
+				<imageExpression><![CDATA["C:\\workspace\\TiMa\\reportes\\compliance\\eau.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="34" y="52" width="521" height="1" uuid="c39e1445-df9f-46a4-a0d3-897ef23bfef8"/>
+			</line>
+			<staticText>
+				<reportElement x="30" y="53" width="522" height="28" uuid="f17d2654-d8bc-4bb5-a2d6-a9f436661cd2"/>
+				<textElement>
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FORMULARIO DE COMPLIANCE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="81" width="525" height="20" uuid="08bdf5a7-af8d-46d6-9e7a-6480d71b5108"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Conocimiento del Cliente (Persona Física)]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="636" splitType="Stretch">
+			<staticText>
+				<reportElement x="34" y="10" width="521" height="20" uuid="afe9cdfd-473a-4221-a503-c2d46d091b27"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[a) Datos Generales]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="40" width="173" height="20" uuid="742b2b4a-28ac-43a8-b107-648ba2a344a3"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre y Apellidos completos:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="72" width="61" height="20" uuid="e3afde87-5d6c-4044-abdd-4c53a9894a60"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dirección:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="103" width="57" height="20" uuid="cd972cdc-9614-4186-b6bf-3f82fc12ee6d"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Teléfono:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="203" y="103" width="46" height="20" uuid="7e98fd86-0806-485e-90e4-9de2472278ad"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[E-mail:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="137" width="219" height="20" uuid="83284f5e-dd26-433d-b109-64ed25790f5f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo y Nº de Documento de Identidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="173" width="95" height="20" uuid="4ea0c7b4-6ec2-41a4-9db9-64394dab4e64"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[País de emisión:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="233" y="173" width="173" height="20" uuid="23e9633f-6cfe-4fbc-b5e5-99e6213d3dcf"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha y lugar de nacimiento:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="211" width="95" height="20" uuid="746aa529-0fc8-4d4c-940e-0c1ece1e817f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nacionalidad:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="233" y="211" width="73" height="20" uuid="e5949ec3-239f-437a-b440-193072e50810"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estado Civil:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="247" width="186" height="20" uuid="7ee70e8e-6809-4e4c-b890-5a345cc0d450"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre y Apellidos del cónyugue:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="282" width="276" height="20" uuid="cf094923-0923-42de-a576-53a2a0ef90ea"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo y Nº de Documento de Identidad del Cónyugue:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="316" width="219" height="20" uuid="8a16cc3a-7ac6-4608-93dd-2a758e362001"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Profesión, Oficio o Actividad principal:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="353" width="157" height="20" uuid="2148bea2-c205-4869-b4d2-e46a2f8b1b1b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Negocio o Actividad Laboral:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="392" width="203" height="20" uuid="388fd884-c344-483b-8273-a1e3dd4324ab"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[País en que se desarrolla la Actividad:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="425" width="420" height="20" uuid="706c8242-e882-4413-ba8f-f086eba9438a"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Propósito y naturaleza de la relación comercial o de la transacción a realizar:]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="490" y="34" width="65" height="20" uuid="028f72ba-72e1-4ce8-983b-d022491bea57"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pág. 1 de 3]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

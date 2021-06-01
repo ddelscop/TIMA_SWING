@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="comperfis1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2d6a784a-6e7a-4e5d-9722-5954e29db0fc">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="273"/>
+	<parameter name="origen_fondos" class="java.lang.String"/>
+	<parameter name="bancos_opera" class="java.lang.String"/>
+	<parameter name="referencias_pers" class="java.lang.String"/>
+	<parameter name="servicio_brindado" class="java.lang.String"/>
+	<parameter name="referido_por" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="105" splitType="Stretch"/>
+	</title>
+	<detail>
+		<band height="636" splitType="Stretch">
+			<staticText>
+				<reportElement x="34" y="10" width="521" height="20" uuid="afe9cdfd-473a-4221-a503-c2d46d091b27"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[b) Origen de los fondos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="40" width="525" height="20" uuid="742b2b4a-28ac-43a8-b107-648ba2a344a3"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Declaro que el origen de los fondos manejados en la transacción es el siguiente:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="190" width="522" height="100" uuid="cf094923-0923-42de-a576-53a2a0ef90ea"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Declaro que esta fuente de fondos en ningún caso involucra actividades ilícitas propias o de terceras personas, y en todos los casos son fondos propios, y por lo tanto no hemos prestado nuestro nombre para que terceras personas con recursos obtenidos ilícitamente efectúen inversiones a nombre nuestro.
+
+La información aquí suministrada corresponde a la realidad y autorizo su verificación ante cualquier persona pública o privada sin limitación alguna.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="340" width="153" height="20" uuid="706c8242-e882-4413-ba8f-f086eba9438a"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bancos con los cuales opera:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="309" width="521" height="20" uuid="cc833a40-5603-4c1f-b5d2-5304f0fb1873"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[c) Referencias]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="374" width="153" height="20" uuid="4305e115-7d7d-4460-853e-251765c4cf2f"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Referencias Profesionales:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="445" width="206" height="20" uuid="1d4e971b-37cd-49a3-8c50-e7e2d7b68211"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Servicio requerido a nuestro Estudio:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="526" width="172" height="20" uuid="681ae14d-41a1-4acf-a97b-dd948c96ffe3"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Referido a nuestro estudio por:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="34" y="60" width="521" height="116" uuid="5f3ac5e0-1fa0-437c-9ad2-07af185c2239"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{origen_fondos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="183" y="340" width="372" height="20" uuid="b93cf67d-7512-459d-a749-54dca03d1e83"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bancos_opera}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="34" y="394" width="521" height="41" uuid="7a2ec0f6-b441-4e6e-b497-210d14efa90d"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referencias_pers}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="32" y="183" width="523" height="1" uuid="5bf9a262-c3b6-4c62-a7d4-8d1ba59d7332"/>
+			</line>
+			<line>
+				<reportElement x="30" y="369" width="525" height="1" uuid="b34c22e1-8ec2-43d7-8522-b14be6d738b7"/>
+			</line>
+			<line>
+				<reportElement x="33" y="440" width="522" height="1" uuid="ee81ed98-9974-4265-a38f-cc226a214e2c"/>
+			</line>
+			<textField>
+				<reportElement x="30" y="465" width="525" height="50" uuid="3bc8480e-ef32-431d-85c1-eaa66029c02c"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{servicio_brindado}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="30" y="520" width="525" height="1" uuid="56645ff2-2777-4741-8f12-5ca3d51373d0"/>
+			</line>
+			<textField>
+				<reportElement x="30" y="546" width="525" height="78" uuid="b730fe7c-35a8-4d6c-96f6-e10cd3dfdfaf"/>
+				<textFieldExpression><![CDATA[$P{referido_por}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="490" y="34" width="65" height="20" uuid="e9e5e63c-45aa-4018-8b1c-311006862b15"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pág. 2 de 3]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

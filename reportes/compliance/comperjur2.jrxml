@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="comperfis1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2d6a784a-6e7a-4e5d-9722-5954e29db0fc">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="refprof" class="java.lang.String"/>
+	<parameter name="servicio_req" class="java.lang.String"/>
+	<parameter name="referido" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="105" splitType="Stretch"/>
+	</title>
+	<detail>
+		<band height="636" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="28" width="149" height="20" uuid="746aa529-0fc8-4d4c-940e-0c1ece1e817f"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Referencias Profesionales:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="141" width="192" height="20" uuid="2dff2953-5465-4449-a925-a8793fb1b2b3"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Servicio requerido a nuestra firma:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="241" width="164" height="20" uuid="7aaaeae9-2abc-4df7-803f-1f36cf4ee31f"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Referido a nuestra firma por:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="29" y="128" width="526" height="1" uuid="37434cbe-073e-48f8-987d-27378290967f"/>
+			</line>
+			<line>
+				<reportElement x="29" y="229" width="526" height="1" uuid="22e26697-e365-4190-976e-52e90da7211c"/>
+			</line>
+			<line>
+				<reportElement x="30" y="329" width="526" height="1" uuid="5fb73395-1c28-4fe8-8861-ff1046eaca91"/>
+			</line>
+			<textField>
+				<reportElement x="29" y="48" width="526" height="70" uuid="9f42bdf6-dca8-4da8-9cf6-0208ae7dd1a0"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{refprof}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="30" y="161" width="525" height="56" uuid="b8259a8c-0b1e-49cc-ae37-db3efc32ea8f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{servicio_req}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="30" y="261" width="522" height="57" uuid="419a646e-2622-47ec-a32f-582faa1370c2"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referido}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="490" y="34" width="65" height="20" uuid="028f72ba-72e1-4ce8-983b-d022491bea57"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pág. 2 de 2]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

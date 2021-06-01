@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="comperfis1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2d6a784a-6e7a-4e5d-9722-5954e29db0fc">
+	<property name="ireport.zoom" value="1.2100000000000002"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="denom_social" class="java.lang.String"/>
+	<parameter name="fecha_lugar" class="java.lang.String"/>
+	<parameter name="rut" class="java.lang.String"/>
+	<parameter name="dom_sede" class="java.lang.String"/>
+	<parameter name="telefono" class="java.lang.String"/>
+	<parameter name="web" class="java.lang.String"/>
+	<parameter name="actividad" class="java.lang.String"/>
+	<parameter name="ingresos" class="java.lang.String"/>
+	<parameter name="pais_actividad" class="java.lang.String"/>
+	<parameter name="accionistas" class="java.lang.String"/>
+	<parameter name="prop_transact" class="java.lang.String"/>
+	<parameter name="origen_fondos" class="java.lang.String"/>
+	<parameter name="paisenque" class="java.lang.String"/>
+	<parameter name="bancos" class="java.lang.String"/>
+	<parameter name="logo_rxa" class="java.io.InputStream"/>
+	<parameter name="logo_eau" class="java.io.InputStream"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="105" splitType="Stretch">
+			<image>
+				<reportElement x="30" y="0" width="240" height="48" uuid="ee8301d9-30d7-4c4d-ac42-e6a243d7b4ef"/>
+				<imageExpression><![CDATA[$P{logo_rxa}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="288" y="0" width="245" height="48" uuid="19f5c01a-5648-4686-9e3d-e6bce7526b17"/>
+				<imageExpression><![CDATA[$P{logo_eau}]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="34" y="52" width="521" height="1" uuid="c39e1445-df9f-46a4-a0d3-897ef23bfef8"/>
+			</line>
+			<staticText>
+				<reportElement x="33" y="53" width="522" height="52" uuid="f17d2654-d8bc-4bb5-a2d6-a9f436661cd2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FORMULARIO DE COMPLIANCE]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="636" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="28" width="119" height="20" uuid="746aa529-0fc8-4d4c-940e-0c1ece1e817f"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Denominación Social:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="0" width="525" height="17" uuid="08bdf5a7-af8d-46d6-9e7a-6480d71b5108"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Conocimiento del Cliente (Persona Jurídica)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="58" width="164" height="20" uuid="6bbf92af-ca5c-4dc0-b071-81ab876fb3b9"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha y lugar de constitución:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="89" width="73" height="20" uuid="6c45ae49-7776-41e5-9abb-21e7634a2d0b"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nro. de RUT:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="121" width="101" height="20" uuid="5b538d09-b7d4-4425-ae91-d7d4493dccd5"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Domicilio y Sede:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="157" width="57" height="20" uuid="1da719e5-cede-4d39-b675-0c01ef940124"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Teléfono:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="169" y="157" width="68" height="20" uuid="210ba980-c753-4821-8c19-a3e1f63f95e2"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Página Web:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="193" width="119" height="20" uuid="43a08dd8-8ff5-40dd-82f6-9d8a048adc76"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Actividad principal:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="229" width="119" height="20" uuid="dde4909f-e9f1-4943-b650-5ddcecf9737d"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Volumen de Ingresos:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="271" width="194" height="20" uuid="dc5f09e3-6b09-48ed-b3f2-73f15c81e571"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[País donde desarrolla la Actividad:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="308" width="207" height="20" uuid="4f77d61e-6471-4846-bf8b-1f0384de843a"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Accionistas y participación accionaria:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="343" width="413" height="20" uuid="d40c3aa5-448c-4a04-9fb4-6df55cd4c705"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Propósito y naturaleza de la relación comercial o de la transacción a realizar:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="432" width="279" height="20" uuid="09808a5f-a543-4db4-8a13-63b9d57909f2"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Origen de los fondos manejados en la transacción:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="512" width="207" height="20" uuid="e71a7c16-ec02-4ccb-9e84-8b0f8398c663"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[País en que se desarrolla la actividad:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="545" width="279" height="20" uuid="f48372fa-2a72-48be-a50e-fd0426954873"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Referencias Bancarias (Bancos con los que trabaja):]]></text>
+			</staticText>
+			<line>
+				<reportElement x="30" y="47" width="525" height="1" uuid="d875149c-f258-484d-9dcc-4052303d8b54"/>
+			</line>
+			<line>
+				<reportElement x="30" y="77" width="525" height="1" uuid="cc295638-eb2c-4abc-b744-3d7b301f7ed9"/>
+			</line>
+			<line>
+				<reportElement x="30" y="109" width="525" height="1" uuid="2aa48ad7-b295-4578-aaf3-477a6a680a46"/>
+			</line>
+			<line>
+				<reportElement x="30" y="141" width="525" height="1" uuid="92664915-8674-47dd-b58c-1a9a43a78d37"/>
+			</line>
+			<line>
+				<reportElement x="30" y="213" width="525" height="1" uuid="1b97d032-762d-493b-9f34-2e1810a89d06"/>
+			</line>
+			<line>
+				<reportElement x="30" y="249" width="525" height="1" uuid="526430fe-9c75-4f57-8ad8-7a342c409648"/>
+			</line>
+			<line>
+				<reportElement x="30" y="291" width="525" height="1" uuid="dab2d090-36d6-4de9-8ac1-88e07c0ea663"/>
+			</line>
+			<line>
+				<reportElement x="30" y="328" width="525" height="1" uuid="4e7836d6-b533-49f7-8eec-6f2bf4791ee7"/>
+			</line>
+			<line>
+				<reportElement x="30" y="419" width="525" height="1" uuid="89205ef1-697a-4dfc-84d7-50e9d97ea43f"/>
+			</line>
+			<line>
+				<reportElement x="30" y="500" width="525" height="1" uuid="27fe56a1-9273-428b-be50-0285d66caad8"/>
+			</line>
+			<line>
+				<reportElement x="30" y="531" width="525" height="1" uuid="37c58842-11b2-44e4-a174-2537b6632ea7"/>
+			</line>
+			<line>
+				<reportElement x="30" y="625" width="525" height="1" uuid="96e80103-f4bd-45d9-ac7a-6356249f619b"/>
+			</line>
+			<textField>
+				<reportElement x="149" y="28" width="406" height="20" uuid="2c3cc208-21e9-4f98-9ff5-69b0d3959b99"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{denom_social}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="194" y="58" width="361" height="20" uuid="7d4d68ce-1cfe-4609-9ec8-2b97244503a2"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fecha_lugar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="103" y="90" width="452" height="20" uuid="55eed494-94ff-4a17-9472-c47828319b24"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{rut}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="122" width="424" height="20" uuid="bcc26fab-59ba-4759-9091-7e47b3348d63"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dom_sede}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="87" y="157" width="82" height="20" uuid="3c516e5e-ddab-4da6-8526-41c5b445b1ba"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{telefono}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="157" width="318" height="20" uuid="1b93fa60-00f9-4e0f-9f4b-440e47854062"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{web}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="30" y="180" width="129" height="1" uuid="2bbe731b-37c5-4744-ae63-97141b2ee8e7"/>
+			</line>
+			<line>
+				<reportElement x="169" y="181" width="386" height="1" uuid="ba8a9887-8ea1-49a1-b5ac-f2575fe591e5"/>
+			</line>
+			<textField>
+				<reportElement x="149" y="194" width="406" height="20" uuid="5fe7edb7-6520-4f7b-9780-8f549b4edecf"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{actividad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="230" width="406" height="20" uuid="795516b9-246c-4efa-b2c2-16e625a2f9d8"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ingresos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="224" y="271" width="331" height="20" uuid="39beda5c-79d5-40c7-8080-4e15dc39f88e"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pais_actividad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="308" width="318" height="20" uuid="bb08b34e-4b0f-49bb-89ea-3ce4574cb9fa"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{accionistas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="30" y="363" width="525" height="56" uuid="5eefd454-bc77-47fb-9ca6-6ff4f1fede5b"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{prop_transact}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="30" y="452" width="525" height="48" uuid="1afa7d65-2e39-4fd5-b3c2-f57848d56d14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{origen_fondos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="512" width="318" height="20" uuid="e84a7274-062d-4d97-ad62-8ea1c07bb655"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paisenque}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="30" y="565" width="525" height="60" uuid="cc6322fa-0d4c-4f12-8edf-0a09d9c054cf"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bancos}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="490" y="34" width="65" height="20" uuid="028f72ba-72e1-4ce8-983b-d022491bea57"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pág. 1 de 2]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
